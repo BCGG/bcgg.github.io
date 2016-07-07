@@ -51,6 +51,10 @@
         }, 310);
       });
     }
+
+    if($(window).innerWidth() <= 480){
+      $('.location').find('br').remove();
+    }
   });
 </script>
 </body>
