@@ -40,7 +40,19 @@
 <script type="text/javascript" src="/js/hammer.min.js"></script>
 <script type="text/javascript" src="/js/sequence.min.js"></script>
 <script type="text/javascript" src="/js/sequence-theme.two-up.js"></script>
-<!--<script type="text/javascript" src="/js/home.js"></script>-->
+<script type="text/javascript">
+  $(document).ready(function(){
+    if ($(window).innerWidth() <= 991){
+      $('.seq-pagination .navigation-link').bind('click',function(){
+        var self = this;
+        setTimeout(function() {
+          theOffset = $(self).offset();
+          $('body,html').animate({ scrollTop: theOffset.top - 70 });
+        }, 310);
+      });
+    }
+  });
+</script>
 </body>
 
 </html>
