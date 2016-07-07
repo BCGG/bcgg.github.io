@@ -1,8 +1,7 @@
 ---
 rank: 2
 title: "Offering"
-description: Lorem ipsum dolor sit amet.
-content:
+content-text:
     - title: "Alkaline"
       description: "An alkaline is any substance with a pH rating lower than 7; that is, any substance with fewer hydrogen ions than pure water. This is opposed to an acid, which is any substance with more hydrogen ions than water. The further the pH is from 7 the more of an acid or alkaline the substance is, depending on which way you're going."
 

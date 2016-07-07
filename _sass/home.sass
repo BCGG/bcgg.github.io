@@ -6,7 +6,6 @@
   .left-section
     height: 100vh
     .content-container
-      border-right: 2px solid #cccccc
       position: relative
       top: 50%
       transform: translateY(-50%)
@@ -48,6 +47,7 @@
     height: 100vh
     padding: 15% 0
     .seq
+      border-left: 2px solid #cccccc
       .seq-nav
         padding: 0
         position: relative
@@ -67,6 +67,38 @@
                 font-family: "Avenir-Bold"
                 text-transform: uppercase
                 margin: 0 35px
+      .seq-screen
+        position: relative
+        .seq-canvas
+          position: relative
+          .content-item
+            height: auto
+            .seq-content
+              .poster-container
+                .promo-poster
+                  display: block
+                  max-width: 80%
+                  margin-left: auto
+                  margin-right: auto
 
+              &.text-content
+                padding: 40px 25px
+                .content-container
+                  .content-title
+                    font-size: 18px
+                    font-family: "Avenir-Bold"
+                    text-align: left
+                    color: #4A4A4A
+                    margin: 15px 0
+                    letter-spacing: 5px
+                    text-transform: uppercase
+                  .content-description
+                    text-align: left
+                    color: #4A4A4A
+                    font-family: "Avenir-Regular"
+                    font-size: 15px
+                    line-height: 30px
+      .seq-next-button
+        outline: none
 
 
