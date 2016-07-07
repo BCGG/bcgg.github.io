@@ -1,5 +1,5 @@
 <div id="page-slider" class="container">
-    <div class="left-section col-md-6 no-gutter">
+    <div class="left-section col-md-6 col-sm-12 col-xs-12 no-gutter">
         <div class="content-container">
             <img class="brand-logo" src="/images/brand-logo.png"/>
             <div class="contact-list">
@@ -21,7 +21,7 @@
     </div>
 
     {% assign sorted-slider-item = site.sliderItem | sort: 'rank' %}
-    <div class="right-section col-md-6 no-gutter">
+    <div class="right-section col-md-6 col-sm-12 col-xs-12 no-gutter">
         <div id="sequence" class="seq">
             <div class="seq-nav">
                 <ul role="navigation" aria-label="Pagination" class="seq-pagination">
@@ -46,7 +46,9 @@
                     <li class="content-item step{{ sliderItem.1 }}  seq-in ">
                         <div data-seq class="seq-content  seq-valign">
                             <div class="poster-container">
-                                <img class="promo-poster" src="/images/promo/promo1.jpg"/>
+                                <img class="visible-lg hidden-md-hidden-sm-hidden-xs promo-poster" src="/images/{{ sliderItem.poster-desktop }}"/>
+                                <img class="hidden-lg visible-md visible-sm hidden-xs promo-poster" src="/images/{{ sliderItem.poster-tablet }}"/>
+                                <img class="hidden-lg hidden-md hidden-sm visible-xs promo-poster" src="/images/{{ sliderItem.poster-mobile }}"/>
                             </div>
                         </div>
                     </li>
