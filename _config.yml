@@ -21,8 +21,8 @@ contact:
 - name: Smart
   number: "+639476971265"
 - name: Landline
-  number: '7369026'
-baseurl: ''
+  number: 7369026
+baseurl: 
 url: http://yourdomain.com
 markdown: kramdown
 sass:
